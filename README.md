@@ -71,7 +71,7 @@ Our goal in this exercise is to render each of the user's guesses:
 ![Screen recording showing each guess printed out above the text input from the last exercise](docs/printed-word-list.gif)
 
 And here's an example of the expected DOM structure:
-
+ 
 ```html
 <div class="guess-results">
   <p class="guess">FIRST</p>

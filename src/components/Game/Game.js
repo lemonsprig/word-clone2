@@ -14,7 +14,7 @@ console.info({ answer });
 
 function Game() {
 
-  const [guessList, setGuessList] = React.useState(["woman", "lover"])
+  const [guessList, setGuessList] = React.useState(["woman", "lover","cakes"])
 
   function handleSubmitGuess(guess) {
     setGuessList([...guessList, guess])
@@ -23,7 +23,7 @@ function Game() {
 
 
   return <>
-    <GuessList guessList={guessList}></GuessList>
+    <GuessList guesses={guessList}></GuessList>
     <GuessInput guessList={guessList} handleSubmitGuess={handleSubmitGuess}></GuessInput>
   </>;
 }

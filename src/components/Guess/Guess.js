@@ -1,9 +1,11 @@
 import React from 'react';
 
 import {range} from '../../utils'
+import {checkGuess} from '../../game-helpers'
 
-function Guess( {value} ) {
+function Guess( {value, answer} ) {
   console.log(value)
+  console.log(answer)
 
   return (
     <p className="guess">

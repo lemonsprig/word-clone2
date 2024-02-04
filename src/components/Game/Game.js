@@ -43,7 +43,7 @@ function Game() {
     {/* <Banner state="sad" message="Some message on the banner"></Banner> */}
     <GuessList guesses={guessList} answer={answer}></GuessList>
     <GuessInput guessList={guessList} handleSubmitGuess={handleSubmitGuess}></GuessInput>
-    {gameState !== 'playing' && (<Banner state="sad" message="Some message on the banner"></Banner>) }
+    {gameState !== 'playing' && (<Banner gameState={gameState} numOfGuesses={guessList.length} answer={answer}></Banner>) }
   </>;
 }
 

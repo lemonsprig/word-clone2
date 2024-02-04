@@ -2,7 +2,7 @@ import React from 'react';
 
 function GuessInput({handleSubmitGuess, gameState}) {
 
-  [guess, setGuess] = React.useState('')
+  const [guess, setGuess] = React.useState('')
 
   function handleSubmit(event) {
     event.preventDefault();

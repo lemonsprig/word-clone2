@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "Josh Comeau <me@joshwcomeau.com>",
-  "homepage":"https://word-clone2.vercel.app/", 
+  "homepage":"https://vercel.com/lemonsprig/word-clone2", 
   "dependencies": {
     "eslint": "8.49.0",
     "eslint-config-react-app": "7.0.1",

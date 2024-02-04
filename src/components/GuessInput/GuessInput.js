@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState }  from 'react';
 
-function GuessInput({handleSubmitGuess}) {
+function GuessInput({handleSubmitGuess, gameState}) {
 
   [guess, setGuess] = React.useState('')
 
@@ -19,6 +19,7 @@ function GuessInput({handleSubmitGuess}) {
     >
       <label className="guess-input-wrapper label" htmlFor="guess-input">Enter Guess:</label>
       <input
+        disabled={gameState !== 'playing'}
         type="text" 
         id="guess-input" 
         className="guess-input-wrapper input"

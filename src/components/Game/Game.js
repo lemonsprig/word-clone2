@@ -17,7 +17,7 @@ console.info({ answer });
 
 function Game() {
 
-  const [guessList, setGuessList] = React.useState(["woman", "lover","cakes"])
+  const [guessList, setGuessList] = React.useState([])
   // game states allowed playing, won, lost
   const [gameState, setGameState] = React.useState('playing')
 

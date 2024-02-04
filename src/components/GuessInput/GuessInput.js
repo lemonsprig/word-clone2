@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState }  from 'react';
 
 function GuessInput({handleSubmitGuess, gameState}) {
 
@@ -7,7 +6,7 @@ function GuessInput({handleSubmitGuess, gameState}) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log({guess});
+
     handleSubmitGuess(guess);
     setGuess('');
   }

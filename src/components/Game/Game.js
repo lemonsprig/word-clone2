@@ -4,9 +4,10 @@ import { sample, range } from '../../utils';
 import { WORDS } from '../../data';
 import GuessInput from '../GuessInput/GuessInput';
 import GuessList from '../GuessList/GuessList';
-import Guess from '../Guess/Guess';
+// import Guess from '../Guess/Guess';
+import Banner from '../Banner/Banner';
 
-import { NUM_OF_GUESSES_ALLOWED } from '../../constants'
+import { NUM_OF_GUESSES_ALLOWED } from '../../constants';
 
 
 // Pick a random word on every pageload.
@@ -32,15 +33,17 @@ function Game() {
       setGameState('lost')
     }
 
-    setGuessList([...guessList, guess])
+    setGuessList(newGuessList)
     console.log("game: ",{guessList})
   }
 
 
   return <>
-    {gameState}
+    {/* {gameState != 'playing' ? <Banner state="sad" message="Some message on the banner"></Banner> : ''} */}
+    {/* <Banner state="sad" message="Some message on the banner"></Banner> */}
     <GuessList guesses={guessList} answer={answer}></GuessList>
     <GuessInput guessList={guessList} handleSubmitGuess={handleSubmitGuess}></GuessInput>
+    {gameState !== 'playing' && (<Banner state="sad" message="Some message on the banner"></Banner>) }
   </>;
 }
 
